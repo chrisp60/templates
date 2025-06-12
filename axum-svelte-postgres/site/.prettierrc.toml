@@ -1,0 +1,25 @@
+plugins = ["prettier-plugin-svelte", "@trivago/prettier-plugin-sort-imports"]
+tabWidth = 2
+svelteBracketNewLine = true
+svelteAllowShorthand = true
+svelteIndentScriptAndStyle = true
+htmlWhitespaceSensitivity = "css"
+printWidth = 80
+objectWrap = "collapse"
+importOrderSeparation = true
+importOrderSortSpecifiers = true
+importOrderGroupNamespaceSpecifiers = true
+importOrder = [
+  "^@(bind|assets)/(.*)$",
+  "^@component/(.*)$",
+  "^@route/(.*)$",
+  "^@lib/(.*)$",
+  "<THIRD_PARTY_MODULES>",
+  "^[./]",
+]
+
+[[overrides]]
+files = "*.svelte"
+
+[overrides.options]
+parser = "svelte"
