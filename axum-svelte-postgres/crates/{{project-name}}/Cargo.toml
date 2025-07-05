@@ -1,5 +1,5 @@
 [package]
-name = "{{project-name}}"
+name = "{{crate_name}}"
 edition.workspace = true
 version.workspace = true
 

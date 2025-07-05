@@ -1,5 +1,5 @@
 use axum::{Router, routing::get};
-pub use {{project-name}}::Result;
+pub use {{crate_name}}::Result;
 use tokio::net::TcpListener;
 
 pub async fn run() -> crate::Result {

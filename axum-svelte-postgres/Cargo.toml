@@ -10,7 +10,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-placeholder = { workspace = true }
+{{crate_name}} = { workspace = true }
 
 tokio = { workspace = true }
 thiserror = { workspace = true }
@@ -20,7 +20,7 @@ tracing-subscriber = { workspace = true }
 
 [workspace.dependencies]
 # Local
-placeholder = { path = "crates/{{project-name}}" }
+{{crate_name}} = { path = "crates/{{project-name}}" }
 
 # External
 axum = { version = "0.8.4", features = ["macros", "ws"] }
